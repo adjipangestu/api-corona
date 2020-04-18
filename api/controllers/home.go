@@ -11,6 +11,8 @@ type Author struct {
 	Jobs   	string	`json:"jobs"`
 	Url_Prov   	string	`json:"provinsi"`
 	Url_Dunia   	string	`json:"dunia"`
+	Tools   	string	`json:"tools"`
+	Sumber   	string	`json:"sumber"`
 }
 
 func (server *Server) Home(w http.ResponseWriter, r *http.Request)  {
@@ -19,6 +21,8 @@ func (server *Server) Home(w http.ResponseWriter, r *http.Request)  {
 		Jobs:	"Software Enginerr at detikcom",
 		Url_Prov:	"/provinsi",
 		Url_Dunia:	"/all",
+		Tools: "Golang (Go Language)",
+		Sumber: "https://api.kawalcorona.com",
 	}
 
 	var data []byte
